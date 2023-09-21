@@ -1,0 +1,28 @@
+<p>listado works!</p>
+<ul>
+    <li>{{heroes[0]}}</li>
+    <li>{{heroes[1]}}</li>
+    <li>{{heroes[2]}}</li>
+    <li>{{heroes[3]}}</li>
+    <li>{{heroes[4]}}</li>
+    <li>{{heroes[5]}}</li>
+</ul>
+//Utilizamos la directiva **ngFor
+<ul >
+    <li *ngFor="let heore of heroes; let i = index ">{{i+1}} {{heore}}</li>
+    
+</ul>
+<ul >
+    <li *ngFor="let heore of heroes">{{heore}}</li>
+    
+</ul>
+
+<button (click)="borrarHeroe()">Eliminar Heroes</button><br>
+
+<div *ngIf="heroeBorrado; else noBorrado">
+    <span>El ultimo heroe borrado ha sido :{{heroeBorrado}} </span>
+</div>
+
+<ng-template #noBorrado>
+    <span>No ha borrado nada</span>
+</ng-template>

@@ -4,7 +4,15 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+  // template : `
+  // <span>Fernando</span>
+  // <h1>Hola de nuevo</h1>
+  // <span>Fernando</span>
+
+  // `
 })
 export class AppComponent {
-  title = 'bases';
+  //  public title:string  = 'Contador App';
+
+
 }
